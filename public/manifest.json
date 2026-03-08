@@ -1,0 +1,35 @@
+{
+  "name": "Marketero",
+  "short_name": "Marketero",
+  "description": "Plataforma de aprendizado de marketing",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F5F5",
+  "theme_color": "#FF3D00",
+  "icons": [
+    {
+      "src": "https://api.dicebear.com/7.x/initials/png?seed=M&backgroundColor=FF3D00&size=192",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://api.dicebear.com/7.x/initials/png?seed=M&backgroundColor=FF3D00&size=192",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://api.dicebear.com/7.x/initials/png?seed=M&backgroundColor=FF3D00&size=512",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://api.dicebear.com/7.x/initials/png?seed=M&backgroundColor=FF3D00&size=512",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

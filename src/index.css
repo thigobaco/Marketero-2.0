@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-brand-primary: #FF3D00;
+  --color-brand-secondary: #2962FF;
+  --color-brand-accent: #00E676;
+  --color-brand-dark: #121212;
+  --color-brand-light: #F5F5F5;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-light text-brand-dark font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.brutal-card {
+  @apply border-2 border-brand-dark shadow-[4px_4px_0px_0px_rgba(18,18,18,1)];
+}
+
+.brutal-button {
+  @apply bg-brand-primary text-white border-2 border-brand-dark px-6 py-3 font-bold transition-all hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[4px_4px_0px_0px_rgba(18,18,18,1)] active:translate-x-[0px] active:translate-y-[0px] active:shadow-none;
+}
+
+.markdown-body h1 { @apply text-3xl mb-4 text-brand-primary; }
+.markdown-body h2 { @apply text-2xl mb-3 mt-6; }
+.markdown-body h3 { @apply text-xl mb-2 mt-4; }
+.markdown-body p { @apply mb-4 leading-relaxed; }
+.markdown-body ul { @apply list-disc pl-6 mb-4 space-y-2; }
+.markdown-body strong { @apply text-brand-secondary; }
+
